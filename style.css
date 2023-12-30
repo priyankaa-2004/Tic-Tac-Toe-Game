@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Game Over';
+    src: url('PressStart2P-Regular.ttf') format('truetype');
+}
+*{
+    background-color: #000435;
+    font-family: 'Game Over', sans-serif;
+}
+.msg-container{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:1.5rem;
+}
+.msg{
+    text-align: center;
+    font-size: 30px;
+    color: #E5DCC5;
+    margin-bottom: 0%;
+}
+.hidden{
+    display:none;
+}
+.new-game{
+    text-align: center;
+    height:70px;
+    width:250px;
+    font-size: 22px;
+    background-color: #4C4C47;
+    color: #E5DCC5;
+    border-radius: 10px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+.new-game:hover{
+    background-color: #08127f ;
+    color: #E5DCC5;
+    border-color: transparent;
+}
+.container{
+    height:70vh;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tic-tac-toe{
+    display: flex;
+    flex-direction: row;
+    font-size: 50px;
+    gap: 1.5rem;
+    padding: 20px 20px 35px 20px;
+}
+  
+.row {
+    display: flex;
+}
+.cell {
+    width: 60px; 
+     height: 60px; 
+}
+.yellow{
+    color: yellow;
+}
+.pink{
+    color: #EF2D56;
+}
+.game{
+    height:50vh;
+    width: 50vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+}
+.box{
+    font-size: 30px;
+    height:100px;
+    width:100px;
+    border-color: transparent;
+    border-radius: 10px;
+    box-shadow: -3px -2px 9px #4C4C47;
+    cursor: pointer;
+}
+.reset{
+    height:70px;
+    width:250px;
+    font-size: 22px;
+    background-color: #4C4C47;
+    color: #E5DCC5;
+    border-radius: 10px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+.reset:hover{
+    background-color: #08127f ;
+    color: #E5DCC5;
+    border-color: transparent;
+}
+/* Responsiveness for mobile phones */
+@media screen and (max-width: 600px) {
+    .msg-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #000435;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+    .hidden{
+        display:none;
+    }
+    .msg {
+      color: #E5DCC5;
+      font-size: 20px;
+      text-align: center;
+      max-width: 90%; 
+      padding: 20px; 
+    }
+  }
+  
+  
